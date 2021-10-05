@@ -19,31 +19,58 @@ Sagitarius (23 November – 20 Desember)
 #What is your zodiac sign?
 
 nama= input("Siapa Nama Kamu : ")
+
 day = int(input("Masukkan Tanggal Lahir: 1,2,3,dst.): "))
+
 month = input("Masukkan Bulan Lahir(contoh: januari, februari, maret,april,dst.): ")
+
 if month == 'januari':
+
 	zodiac = 'Capricorn' if (day <= 19) else 'aquarius'
+
 elif month == 'februari':
+
 	zodiac = 'Aquarius' if (day <= 18) else 'pisces'
+
 elif month == 'maret':
+
 	zodiac = 'Pisces' if (day <= 20) else 'aries'
+
 elif month == 'april':
+
 	zodiac = 'Aries' if (day <= 20) else 'taurus'
+
 elif month == 'mei':
+
 	zodiac = 'Taurus' if (day <= 20) else 'gemini'
+
 elif month == 'juni':
+
 	zodiac = 'Gemini' if (day <= 20) else 'cancer'
+
 elif month == 'juli':
+
 	zodiac = 'Cancer' if (day <= 20) else 'leo'
+
 elif month == 'agustus':
+
 	zodiac = 'Leo' if (day <= 21) else 'virgo'
+	
+	
 elif month == 'september':
+
 	zodiac = 'Virgo' if (day <= 22) else 'libra'
+
 elif month == 'oktober':
+
 	zodiac = 'Libra' if (day <= 22) else 'scorpio'
+
 elif month == 'november':
+
 	zodiac = 'scorpio' if (day <= 22) else 'sagittarius'
+	
 elif month == 'desember':
+
 	zodiac = 'Sagittarius' if (day <= 20) else 'capricorn'
 
 print("Hallo", nama, "zodiak kamu adalah", zodiac)
